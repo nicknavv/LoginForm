@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+
+/* Reset Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Section Styles */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    -30deg,
+    #03a9f4 0%,
+    #3a78b7 50%,
+    #262626 50%,
+    #607d8b 100%
+  );
+
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Box Class Styles */
+
+.box {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+
+.form {
+  position: relative;
+  width: 100%;
+}
+
+.form h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form p {
+  margin-bottom: 20px;
+}
+
+.form a {
+  color: #202020;
+}
+
+/* Input Box Styles */
+
+.form .inputBx {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputBx input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  padding: 8px 10px;
+  padding-left: 35px;
+  border-radius: 6px;
+  color: #202020;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #686868;
+}
+
+input[type="submit"] {
+  background: #202020;
+  width: 100%;
+  padding: 8px 10px;
+  box-shadow: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.inputBx i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #202020;
+}
+
+/* Label Styles  */
+
+.remember {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
