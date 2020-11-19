@@ -100,6 +100,9 @@ input::placeholder {
 
 input[type="submit"] {
   background: #202020;
+  color: white;
+  position: relative;
+  transition: all 0.2s ease-in-out;
   width: 100%;
   padding: 8px 10px;
   box-shadow: none;
@@ -107,6 +110,10 @@ input[type="submit"] {
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+input[type="submit"]:active {
+  top: 2px;
 }
 
 .inputBx i {
